@@ -72,13 +72,20 @@ The dashboard helps stakeholders identify:
 The interactive Gender Filter allows users to analyze product sales trends and purchasing preferences based on customer gender.
 
 ### DAX Measures
-- **Total Revenue** — Calculates total revenue
+- **Total Revenue** — SUM of UnitPrice × Quantity from Sales Transactions
 
-- **Total Profit** — Calculates total profit 
+- **Total Profit** — Total Revenue minus Total Cost
 
 - **MTD Sales** — It calculates the sale of the from  the first day of the current month till present day
 
-- **Last Month Revenue** — It calculates the revenue of the previous month
+- **Last Month Revenue** — It calculates the revenue of the previous month, it uses PREVIOUSMONTH or CALCULATE with date filter
 
  ### Tools Used 
 Power BI Desktop — Data Cleaning(Power Query),DAX measures, Star Schema data model, Time Intelligence functions, Cross-page slicers, Map visual, KPI gauge, MTD/Target calculations
+
+### Recommendations
+- Since overall revenue is currently below the target, the business should introduce targeted promotional campaigns, seasonal discounts, and bundle offers to increase sales volume and improve revenue achievement.
+- Vegetables are the top-performing category by order quantity, indicating strong customer demand. The business should maintain optimal inventory levels, expand product variety, and prioritize supply chain efficiency for this category to maximize sales opportunities.
+- Middle-aged customers contribute the highest share of total orders, making them the most valuable customer segment. Personalized marketing campaigns, loyalty programs, and targeted product recommendations should be designed specifically for this age group to improve customer retention and repeat purchases.
+- Red Wine shows the highest product revenue growth over time, indicating strong market demand. The business should increase promotion, ensure product availability, and explore cross-selling opportunities with complementary products to further boost profitability.
+- Rising order quantities alongside increasing returns suggest the need for better quality control and return management strategies to reduce operational losses and improve customer satisfaction.
